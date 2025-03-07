@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/coffee-listing/static/css/main.bd220110.css",
-    "main.js": "/coffee-listing/static/js/main.500817ea.js",
+    "main.css": "/coffee-listing/static/css/main.e3fca4c9.css",
+    "main.js": "/coffee-listing/static/js/main.fd462c24.js",
     "static/js/453.5ca71c55.chunk.js": "/coffee-listing/static/js/453.5ca71c55.chunk.js",
-    "static/media/bg-cafe-lg.jpg": "/coffee-listing/static/media/bg-cafe-lg.6ac1a0370cab90765c6a.jpg",
     "index.html": "/coffee-listing/index.html",
-    "main.bd220110.css.map": "/coffee-listing/static/css/main.bd220110.css.map",
-    "main.500817ea.js.map": "/coffee-listing/static/js/main.500817ea.js.map",
+    "main.e3fca4c9.css.map": "/coffee-listing/static/css/main.e3fca4c9.css.map",
+    "main.fd462c24.js.map": "/coffee-listing/static/js/main.fd462c24.js.map",
     "453.5ca71c55.chunk.js.map": "/coffee-listing/static/js/453.5ca71c55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd220110.css",
-    "static/js/main.500817ea.js"
+    "static/css/main.e3fca4c9.css",
+    "static/js/main.fd462c24.js"
   ]
 }
