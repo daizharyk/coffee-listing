@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 import CoffeeCard from "./CoffeeCard";
 const CoffeeList = ({ filter }) => {
   const [coffeeData, setCoffeeData] = useState([]);
