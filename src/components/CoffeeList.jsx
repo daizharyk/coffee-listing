@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import CoffeeCard from "./CoffeeCard";
-
-function CoffeeList() {
+const CoffeeList = ({ filter }) => {
   const [coffeeData, setCoffeeData] = useState([]);
-  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  console.log(coffeeData);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     axios
@@ -27,13 +24,18 @@ function CoffeeList() {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
+  // Фильтрация по доступности
+  const filteredData =
+    filter === "available"
+      ? coffeeData.filter((coffee) => coffee.available)
+      : coffeeData;
+
   return (
     <section className="coffee-list">
-      {coffeeData.map((coffee) => (
+      {filteredData.map((coffee) => (
         <CoffeeCard key={coffee.id} coffee={coffee} />
       ))}
     </section>
   );
-}
-
+};
 export default CoffeeList;

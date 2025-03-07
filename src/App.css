@@ -5,9 +5,10 @@ body {
   font-size: 16px;
   background-color: #111315;
   background-image: url("/public/resources/bg-cafe-lg.jpg");
-  background-size: cover;
-
+  background-size: auto;
+  background-position: top;
   background-repeat: no-repeat;
+  padding: 0 10px;
 }
 * {
   margin: 0;
@@ -18,40 +19,47 @@ body {
 .background {
   display: flex;
   justify-content: center;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
-  width: 900px;
-  height: 1000px;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #1b1d1f;
+  color: #fef7ee;
+  max-width: 1200px;
+  height: auto;
+  margin: 150px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Для красоты */
+  border-radius: 10px;
 }
+
 .coffee-list {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
+  margin-bottom: 50px;
 }
 .buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin: 20px;
+  margin-bottom: 10px;
 }
 .buttons button {
-  background-color: #6f757c;
   padding: 10px 15px;
   color: #fef7ee;
+  background: none;
   font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s all;
   border: 0;
 }
+.btn.active {
+  background-color: #6f757c;
+}
+
 button:hover {
   background-color: #4d5562;
 }
@@ -64,9 +72,10 @@ h2 {
   align-items: center;
 }
 .card {
-  width: 100%; /* Растягиваем карточку на всю ширину колонки */
-  height: 100%; /* По желанию — растягиваем по высоте */
-  display: flex; /* Для гибкого расположения контента */
+  width: 100%;
+
+  height: 100%;
+  display: flex;
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;
@@ -74,14 +83,26 @@ h2 {
   gap: 10px;
 }
 .card img {
+  cursor: pointer;
   border-radius: 20px;
+  transition: 0.2s all;
+}
+.card img:hover {
+  scale: 1.02;
+  box-shadow: 0 4px 8px rgba(107, 107, 107, 0.2);
 }
 .tag {
   position: absolute;
   background-color: #f6c768;
   padding: 5px 15px;
   margin: 10px;
+  color: #111315;
+  font-weight: 700;
   border-radius: 20px;
+}
+.votes {
+  color: #6f757c;
+  margin-left: 5px;
 }
 .card-title {
   display: flex;
@@ -98,6 +119,8 @@ h2 {
 .price {
   background-color: #bee3cc;
   padding: 5px 10px;
+  color: #1b1d1f;
+  font-weight: 700;
   border-radius: 5px;
   font-size: 0.75rem;
 }
@@ -124,7 +147,25 @@ h2 {
   max-width: 500px;
 }
 .collection-container {
+  margin: 80px 0 0 0;
+  z-index: 1;
+  display: flex;
+  color: #fef7ee;
+  flex-direction: column;
+  gap: 20px;
   max-width: 800px;
-  margin: 0 auto;
+
   text-align: center;
+}
+
+.vector-svg {
+  position: absolute;
+  top: 60px;
+  right: 300px;
+}
+
+@media (max-width: 500px) {
+  .vector-svg{
+    right: 0;
+  }
 }

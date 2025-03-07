@@ -1,7 +1,10 @@
+import React, { useState } from "react";
 import Background from "./components/Background";
 import CoffeeList from "./components/CoffeeList";
+import FilterButtons from "./components/FilterButtons";
 
 function App() {
+  const [filter, setFilter] = useState("all");
   return (
     <Background>
       <div className="collection-container">
@@ -11,12 +14,10 @@ function App() {
           different roast types and origins, expertly roasted in small batches
           and shipped fresh weekly.
         </p>
-        <div className="buttons">
-          <button className="btn">All Products</button>
-          <button className="btn">Available Now</button>
-        </div>
+        <FilterButtons setFilter={setFilter} filter={filter} />
       </div>
-      <CoffeeList />
+      <img className="vector-svg" src="/resources/vector.svg" alt="" />
+      <CoffeeList filter={filter} />
     </Background>
   );
 }

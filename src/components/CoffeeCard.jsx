@@ -18,7 +18,7 @@ function CoffeeCard({ coffee }) {
                 alt="Star"
                 className="star-icon"
               />
-              {rating} ({votes} votes)
+              {rating} <span className="votes">({votes} votes)</span>
             </span>
           ) : (
             <>
