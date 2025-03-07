@@ -129,7 +129,13 @@ h2 {
   height: 25px;
   justify-content: center;
 }
-
+.author-info {
+  color: #fef7ee;
+  margin: 10px 0 ;
+}
+.author-info a {
+  color: #ed735d;
+}
 .status {
   color: #ed735d;
   font-weight: 800;
@@ -165,7 +171,7 @@ h2 {
 }
 
 @media (max-width: 500px) {
-  .vector-svg{
+  .vector-svg {
     right: 0;
   }
 }

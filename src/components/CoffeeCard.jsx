@@ -14,7 +14,7 @@ function CoffeeCard({ coffee }) {
           {votes > 0 ? (
             <span className="rating-text">
               <img
-                src="/resources/Star_fill.svg"
+                src={`${process.env.PUBLIC_URL}/resources/Star_fill.svg`}
                 alt="Star"
                 className="star-icon"
               />
@@ -22,7 +22,11 @@ function CoffeeCard({ coffee }) {
             </span>
           ) : (
             <>
-              <img src="/resources/Star.svg" alt="Star" className="star-icon" />
+              <img
+                src={`${process.env.PUBLIC_URL}/resources/Star.svg`}
+                alt="Star"
+                className="star-icon"
+              />
               <p>No ratings</p>
             </>
           )}
