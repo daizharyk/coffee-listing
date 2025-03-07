@@ -53,11 +53,11 @@ body {
   border: 0;
 }
 .btn.active {
-  background-color: #4D5562;
+  background-color: #4d5562;
 }
 
 .buttons button:hover {
-  background-color: #6F757C;
+  background-color: #6f757c;
 }
 h2 {
   font-size: 1rem;
@@ -170,5 +170,11 @@ h2 {
 @media (max-width: 500px) {
   .vector-svg {
     right: 0;
+  }
+  .background {
+    padding: 20px 40px;
+  }
+  .coffee-list {
+    padding: 0;
   }
 }
