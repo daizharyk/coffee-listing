@@ -177,4 +177,11 @@ h2 {
   .coffee-list {
     padding: 0;
   }
+  .collection-container {
+    margin-top: 20px;
+  }
+  .vector-svg {
+    right: 0;
+    top: 0;
+  }
 }
