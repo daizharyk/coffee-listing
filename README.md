@@ -36,7 +36,6 @@
 
 ![screenshot](public/screenshot.png)
 
-
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -46,9 +45,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### What I learned
 
-- Как настроить React-проект с нуля
-- Как работать с компонентами и состоянием
-- Как развернуть проект на GitHub Pages
+How to set up a React project from scratch
+How to work with components and state
+How to deploy a project to GitHub Pages
 
 ### Useful resources
 
