@@ -6,8 +6,19 @@ import Footer from "./components/Footer";
 
 function App() {
   const [filter, setFilter] = useState("all");
+  const backgroundStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/resources/bg-cafe-lg.jpg)`,
+    backgroundSize: "auto",
+    backgroundColor: "#111315",
+    backgroundPosition: "top",
+    backgroundRepeat: "no-repeat",
+    minHeight: "100vh",
+
+    padding: "150px 10px 10px 10px",
+  };
+
   return (
-    <>
+    <div style={backgroundStyle}>
       <Background>
         <div className="collection-container">
           <h1>Our Collection</h1>
@@ -18,11 +29,15 @@ function App() {
           </p>
           <FilterButtons setFilter={setFilter} filter={filter} />
         </div>
-        <img className="vector-svg" src="/resources/vector.svg" alt="" />
+        <img
+          className="vector-svg"
+          src={`${process.env.PUBLIC_URL}/resources/vector.svg`}
+          alt=""
+        />
         <CoffeeList filter={filter} />
       </Background>
       <Footer />
-    </>
+    </div>
   );
 }
 

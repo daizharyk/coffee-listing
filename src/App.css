@@ -3,12 +3,7 @@ body {
   padding: 0;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-  background-color: #111315;
-  background-image: url("/public/resources/bg-cafe-lg.jpg");
-  background-size: auto;
-  background-position: top;
-  background-repeat: no-repeat;
-  padding: 0 10px;
+  height: 100%;
 }
 * {
   margin: 0;
@@ -25,8 +20,10 @@ body {
   background-color: #1b1d1f;
   color: #fef7ee;
   max-width: 1200px;
+  min-height: 100vh;
+  padding-top: 150px;
   height: auto;
-  margin: 150px auto;
+  margin: 0 auto;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Для красоты */
   border-radius: 10px;
@@ -131,7 +128,7 @@ h2 {
 }
 .author-info {
   color: #fef7ee;
-  margin: 10px 0 ;
+  margin: 10px 0;
 }
 .author-info a {
   color: #ed735d;
