@@ -3,7 +3,14 @@ function CoffeeCard({ coffee }) {
 
   return (
     <article className="card">
-      <img src={image} alt={name} className="card-image" />
+      <img
+        src={image}
+        alt={name}
+        className="card-image"
+        loading="lazy"
+        width="300" 
+        height="200"
+      />
       <div className="card-title">
         <h2>{name}</h2>
         <p className="price">{price}</p>
